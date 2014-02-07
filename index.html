@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+  <head>
+    <meta name="viewport" content="width=device-width" />
+      
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Epidemic Modelling</title>
+<!-- Included CSS Files (Uncompressed) -->
+  <!--
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  -->
+ <link rel="stylesheet" href="stylesheets/foundation.min.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+
+<script src="javascripts/modernizr.foundation.js"></script>
+
+	    <link rel="stylesheet" type="text/css" media="screen" href="css/jquery.aristo.css" />
+        <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.9.min.js"></script>
+        <script type="text/javascript" src="js/jquery.flot.js"></script>
+        <script type="text/javascript" src="js/jquery.flot.resize.js"></script>
+        <script type="text/javascript" src="js/jstat-0.1.0.min.js"></script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="twelve columns">
+	<h1>Epidemic Modelling Simulations</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="eight columns">
+	<h2><a href="exp.html">Exponential growth/decay models</a></h2>
+	<p>These models simulate potentially unlimited growth characterised by a reproduction rate, &rho;, parameter. 
+	The simulation can either be deterministic or modelled as a Poisson process.</p>
+	<a href="exp.html"><button>Exponential Models</button></a>
+      </div>
+      <div class="four columns">
+	<img src="images/expmodel.png" alt="Exponential model"/>
+      </div>
+    </div>
+ 
+    <div class="row">
+      <div class="eight columns">
+	<h2><a href="sis.html">SIS models</a></h2>
+	<p>A finite population with initial infectious cases. Individuals may recover but can get reinfected. There are two parameters here so that infection and recovery can be independently controlled. Randomness can be introduced by a Binomial distribution.</p>
+	<a href="sis.html"><button>SIS Models</button></a>
+      </div>
+      <div class="four columns">
+	<img src="images/simodel.png" alt="SIS model"/>
+      </div>
+    </div>
+ 
+    <div class="row">
+      <div class="eight columns">
+	<h2><a href="sir.html">SIR models</a></h2>
+	<p>An  SIR model where infectious cases recover and are removed from the process. </p>
+	<a href="sir.html"><button>SIR Models</button></a>
+      </div>
+      <div class="four columns">
+	<img src="images/sirmodel.png" alt="Exponential model"/>
+      </div>
+    </div>
+ 
+    <div class="row">
+      <div class="twelve columns">
+      <h2>Other epidemiology models on the internet</h2>
+      <p>Here are links to a few other epidemiological simulation pages on the web. Mostly they are more complicated than the simple ones above, and may use different names and parameterisation schemes.</p>
+	<ul>
+	  <li><a href="http://op12no2.me/toys/sir/">SIR simulation</a> from Op12No2</li>
+	  <li><a href="http://op12no2.me/toys/herd/">Spatial SIR individual model</a>, a series of models showing different scenarios including vaccination.</li>
+	  <li><a href="http://jsxgraph.uni-bayreuth.de/wiki/index.php/Epidemiology:_The_SIR_model">An SIR simulation</a> written as a demo
+for a web graphs package.</li>
+	  <li><a href="http://jsxgraph.uni-bayreuth.de/wiki/index.php/Epidemiology:_The_SEIR_model">An SEIR simulation,</a> - an SIR model with a latent, infected but non-infectious, stage.</li>
+	  <li><a href="http://jsxgraph.uni-bayreuth.de/wiki/index.php/Population_growth_models">An Exponential Growth Model</a> which lets you compare the simulation with the analytical solution.</li>
+
+	</ul>
+      </div>
+    </div>
+      
+    </body>
+</html>

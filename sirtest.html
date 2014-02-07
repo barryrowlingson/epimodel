@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+<script>
+function LoadMyJs(scriptName) {
+var docHeadObj = document.getElementsByTagName("head")[0];
+var dynamicScript = document.createElement("script");
+dynamicScript.type = "text/javascript";
+dynamicScript.src = scriptName;
+docHeadObj.appendChild(dynamicScript);
+}
+</script>
+</head>
+<body>
+<h1>Test Code</h1>
+</body>
+</html>
