@@ -1,9 +1,24 @@
 
 $(document).ready(function() {
 
+$(".updown").click(function(){
+    var b = $(this);
+    var sid = b.data("slider");
+    var step = $(sid).slider("option","step");
+    if(b.data("step") == "up"){
+	$(sid).slider("value", $(sid).slider("value")+step);
+    };
+    if(b.data("step") == "down"){
+	$(sid).slider("value", $(sid).slider("value")-step);
+    };
+});
+
 
 	$('#n0').slider({
-		slide: function(event, ui) {
+	    change: function(event, ui) {
+		    $('#n0-value').text(ui.value);
+		},
+	    slide: function(event, ui) {
 		    $('#n0-value').text(ui.value);
 		},
 		    step: 1,
@@ -12,6 +27,9 @@ $(document).ready(function() {
 		    }); 
 
 	$('#rho').slider({
+	    change: function(event, ui) {
+		    $('#rho-value').text(ui.value);
+		},
 		slide: function(event, ui) {
 		    $('#rho-value').text(ui.value);
 		},
@@ -20,6 +38,9 @@ $(document).ready(function() {
 		    value: 1.0
 		    }); 	
 	$('#time').slider({
+		change: function(event, ui) {
+		    $('#time-value').text(ui.value);
+		},
 		slide: function(event, ui) {
 		    $('#time-value').text(ui.value);
 		},

@@ -39,35 +39,58 @@
 <div class="three columns">
 <h3>Parameters</h3>
 
-<h4 id="n0-label" class="small" title="Initial number of infected cases">
+<h4 id="n0-label" class="large" title="Initial number of infected cases">
 <span id="n0-name">N=</span>
 <span id="n0-value">1</span>
 </h4>
-<div id="n0" title="Initial number of infected cases" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+
+<div class="row">
+<div class="two columns">
+
+  <span><a data-slider="#n0" data-step="up" class="updown" href="#">&#8593</a><a data-slider="#n0" data-step="down" class="updown" href="#">&#8595</a></span>
+</div>
+<div class="ten columns">
+<div  id="n0" title="Initial number of infected cases" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
 <a class="ui-slider-handle ui-state-default ui-corner-all ui-state-hover" href="#" style="left: 50%;"></a>
 </div>
+</div>
+</div>
 
-<h4 id="rho-label" class="small" title="Reproduction Number">
+<h4 id="rho-label" class="large" title="Reproduction Number">
 <span id="rho-name">&rho;=</span>
 <span id="rho-value">1.00</span>
 </h4>
+<div class="row">
+<div class="two columns">
+  <span><a data-slider="#rho" data-step="up" class="updown" href="#">&#8593</a><a data-slider="#rho" data-step="down" class="updown" href="#">&#8595</a></span>
+</div>
+<div class="ten columns">
 <div id="rho" title="Reproduction Number" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
 <a class="ui-slider-handle ui-state-default ui-corner-all ui-state-hover" href="#" style="left: 50%;"></a>
 </div>
+</div>
+</div>
+
 
 <h4 id="random-label" class="small" title="Add Poisson variation">
 Randomness
 </h4>
 <label for="randombox" title="Add Poisson variation"><input type="checkbox" id="randombox" title="Add Binomial variation" /><span class="checkbox"></span>Add Randomness</label>
 
-<h4 id="time-label" class="small" title="Number of time steps">
+<h4 id="time-label" class="large" title="Number of time steps">
 <span id="time-name">Steps=</span>
 <span id="time-value">100</span>
 </h4>
+<div class="row">
+<div class="two columns">
+<span><a data-slider="#time" data-step="up" class="updown" href="#">&#8593</a><a data-slider="#time" data-step="down" class="updown" href="#">&#8595</a></span>
+</div>
+<div class="ten columns">
 <div id="time" title="Number of time steps" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
 <a class="ui-slider-handle ui-state-default ui-corner-all ui-state-hover" href="#" style="left: 50%;"></a>
 </div>
-
+</div>
+</div>
 
 <button id="run-model" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-primary ui-state-hover" role="button" aria-disabled="false">
 <span class="ui-button-icon-primary ui-icon ui-icon-play"></span>
