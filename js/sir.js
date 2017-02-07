@@ -1,8 +1,23 @@
 
 $(document).ready(function() {
 
+$(".updown").click(function(){
+    var b = $(this);
+    var sid = b.data("slider");
+    var step = $(sid).slider("option","step");
+    if(b.data("step") == "up"){
+	$(sid).slider("value", $(sid).slider("value")+step);
+    };
+    if(b.data("step") == "down"){
+	$(sid).slider("value", $(sid).slider("value")-step);
+    };
+});
+
 	$('#s0').slider({
 		slide: function(event, ui) {
+		    $('#s0-value').text(ui.value);
+		},
+		change: function(event, ui) {
 		    $('#s0-value').text(ui.value);
 		},
 		    step: 1,
@@ -14,6 +29,9 @@ $(document).ready(function() {
 		slide: function(event, ui) {
 		    $('#i0-value').text(ui.value);
 		},
+		change: function(event, ui) {
+		    $('#i0-value').text(ui.value);
+		},
 		    step: 1,
 		    min: 0.0, max: 200,
 		    value: 1
@@ -23,12 +41,18 @@ $(document).ready(function() {
 		slide: function(event, ui) {
 		    $('#r0-value').text(ui.value);
 		},
+		change: function(event, ui) {
+		    $('#r0-value').text(ui.value);
+		},
 		    step: 1,
 		    min: 0.0, max: 200,
 		    value: 0
 		    }); 
 
 	$('#alpha').slider({
+		change: function(event, ui) {
+		    $('#alpha-value').text(ui.value);
+		},
 		slide: function(event, ui) {
 		    $('#alpha-value').text(ui.value);
 		},
@@ -40,12 +64,18 @@ $(document).ready(function() {
 		slide: function(event, ui) {
 		    $('#beta-value').text(ui.value);
 		},
+		change: function(event, ui) {
+		    $('#beta-value').text(ui.value);
+		},
 		    step: 0.0001,
 		    min: 0.0, max: 0.01,
 		    value: 0.001
 		    }); 	
 	$('#time').slider({
 		slide: function(event, ui) {
+		    $('#time-value').text(ui.value);
+		},
+		change: function(event, ui) {
 		    $('#time-value').text(ui.value);
 		},
 		    step: 1,
