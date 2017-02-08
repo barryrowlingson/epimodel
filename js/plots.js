@@ -54,8 +54,12 @@ var Plot = Class.extend({
 
 	$("#plot").bind("plothover", function (event, pos, item) {
 			    $("#x").text("t = "+pos.x.toFixed(1));
-			    $("#y").text("count = "+pos.y.toFixed(0));
+			    $("#y").text("")//count = "+pos.y.toFixed(0));
+	                    if(item){
+				$("#y").text(item.series.label+"="+item.datapoint[1].toFixed(1));
+				};
 			});
+
 	$("#plot").bind("mouseenter",function(){$("#coords").fadeTo(500,1);});
 	$("#plot").bind("mouseleave",function(){$("#coords").fadeTo(500,0.5);});
 	
