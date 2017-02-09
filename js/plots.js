@@ -47,7 +47,7 @@ var Plot = Class.extend({
 	};
 	this._options.grid = {
 	    hoverable: true,
-	    autoHighlight: false,
+	    autoHighlight: true,
 	    clickable: true
 	};
         this._flotObj = $.plot($(this._container), this._plots, this._options);
