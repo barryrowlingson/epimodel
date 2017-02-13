@@ -37,13 +37,12 @@
 </div>
 <div class="row">
 <div class="three columns">
-<h3>Parameters</h3>
-
+<div class="pgroup">
 <h4 id="n0-label" class="large" title="Initial number of infected cases">
 <span id="n0-name">N=</span>
 <span id="n0-value">1</span>
 </h4>
-
+<h5 class="info">Initial number of infected cases</h5>
 <div class="row">
 <div class="two columns">
 
@@ -55,11 +54,13 @@
 </div>
 </div>
 </div>
-
+</div>
+<div class="pgroup">
 <h4 id="rho-label" class="large" title="Reproduction Number">
 <span id="rho-name">&rho;=</span>
 <span id="rho-value">1.00</span>
 </h4>
+<h5 class="info">Reproduction number</h5>
 <div class="row">
 <div class="two columns">
   <span><a data-slider="#rho" data-step="up" class="updown" href="#">&#8593</a><a data-slider="#rho" data-step="down" class="updown" href="#">&#8595</a></span>
@@ -70,13 +71,20 @@
 </div>
 </div>
 </div>
+</div>
 
-
+<div class="pgroup">
 <h4 id="random-label" class="small" title="Add Poisson variation">
 Randomness
 </h4>
+<div class="row">
+<div class="ten columns">
 <label for="randombox" title="Add Poisson variation"><input type="checkbox" id="randombox" title="Add Binomial variation" /><span class="checkbox"></span>Add Randomness</label>
+</div>
+</div>
+</div>
 
+<div class="pgroup">
 <h4 id="time-label" class="large" title="Number of time steps">
 <span id="time-name">Steps=</span>
 <span id="time-value">100</span>
@@ -88,6 +96,7 @@ Randomness
 <div class="ten columns">
 <div id="time" title="Number of time steps" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
 <a class="ui-slider-handle ui-state-default ui-corner-all ui-state-hover" href="#" style="left: 50%;"></a>
+</div>
 </div>
 </div>
 </div>
@@ -104,8 +113,17 @@ Randomness
 <div class="coord" id="coords"><span class="coord" id="x">t = ...</span>, <span class="coord" id="y">count = ...</span></div>
 </div>
 </div>
-<div class="row">
-<a href="index.html">Back to Model list</a>
+
+<div class="row footer">
+<div class="three columns">
+<a href="exp.html">Reload to reset</a>
 </div>
+<div class="three columns">
+<a href="index.html">Return to Model List</a>
+</div>
+<div class="three columns">
+</div>
+</div>
+
     </body>
 </html>
