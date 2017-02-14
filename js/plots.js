@@ -53,10 +53,11 @@ var Plot = Class.extend({
         this._flotObj = $.plot($(this._container), this._plots, this._options);
 
 	$("#plot").bind("plothover", function (event, pos, item) {
-			    $("#x").text("t = "+pos.x.toFixed(1));
-			    $("#y").text("")//count = "+pos.y.toFixed(0));
+			    $("#x").text("mouse at t = "+pos.x.toFixed(1));
+			    $("#y").text("count = "+pos.y.toFixed(0));
 	                    if(item){
-				$("#y").text(item.series.label+"="+item.datapoint[1].toFixed(1));
+				$("#x").text("At t = "+item.datapoint[0].toFixed(1));
+				$("#y").text("Value of "+item.series.label+" = "+item.datapoint[1].toFixed(1));
 				};
 			});
 
