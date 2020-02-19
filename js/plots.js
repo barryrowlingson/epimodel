@@ -86,7 +86,7 @@ var SIRPlot = Plot.extend(
 	    
 	    this.setData(
 		[
-		    {data: S, label: "S", color: "green", hoverable: true}, 
+		    {data: S, label: "S", color: "grey", hoverable: true}, 
 		    {data: I, label:"I", color: "red", hoverable: true },
 		    {data:R, label:"R", color: "blue", hoverable: true}
 		]);
@@ -114,7 +114,7 @@ var SIPlot = Plot.extend({
 		    S.push([i,this._model.S[i]]);
 		    I.push([i,this._model.I[i]]);
 		};
-		this.setData([{data: S, label: "S", color: "green", hoverable: true}, {data: I, label:"I", color: "red", hoverable: true}]);
+		this.setData([{data: S, label: "S", color: "grey", hoverable: true}, {data: I, label:"I", color: "red", hoverable: true}]);
 		this._super();
 		this._flotObj.setupGrid();
 
